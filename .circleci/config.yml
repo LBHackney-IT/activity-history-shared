@@ -25,10 +25,10 @@ jobs:
       - checkout
       - run:
           name: Install dotnet format
-          command: dotnet tool install dotnet-format --tool-path ./dotnet-format-local/
+          command: dotnet tool install -g dotnet-format
       - run:
           name: Run formatter check
-          command: ./dotnet-format-local/dotnet-format --check Hackney.Shared.Activity
+          command: dotnet-format --check Hackney.Shared.Activity
   # build-and-test:
   #   executor: docker-python
   #   steps:
