@@ -28,28 +28,20 @@ jobs:
         uses: gittools/actions/gitversion/execute@v0.9.7
         with:
           useConfigFile: true
-  display-semver:
-    name: Display Semantic Version
+        - name: Display SemVer
+          run: |
+            echo "SemVer: $GITVERSION_SEMVER"
+  publish-package:
+    name: Publish Package
     runs-on: ubuntu-latest
     needs: calculate-version
     env:
       SEMVER: ${{ needs.calculate-version.outputs.semVer }}
     steps:
-      - name: Display version
-        run: |
-          echo SemVer: $SEMVER
-  publish-package:
-    name: Publish Package
-    runs-on: ubuntu-latest
-    
-    needs: display-semver
-    steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build the Package
-        run: |
-          dir
-          dotnet pack Hackney.Shared.Activity -p:PackageVersion=$SEMVER --configuration Release
+        run: dotnet pack Hackney.Shared.Activity -p:PackageVersion=$SEMVER --configuration Release
       # - name: Publish the Package
       #   run: |
       #     cd /root/project/Hackney.Shared.Activity/bin/Release
