@@ -46,5 +46,6 @@ jobs:
         run: dotnet pack Hackney.Shared.Activity -p:PackageVersion=$SEMVER --configuration Release
       - name: Publish the Package
         run: |
-          cd /Hackney.Shared.Activity/bin/Release
+          dir
+          cd Hackney.Shared.Activity/bin/Release
           dotnet nuget push Hackney.Shared.Activity.*.nupkg -s https://nuget.pkg.github.com/LBHackney-IT/index.json --api-key ${{secrets.NUGET_KEY }} Hackney.Shared.Activity.*/*.nupkg
