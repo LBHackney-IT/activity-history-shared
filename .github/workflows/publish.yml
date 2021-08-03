@@ -45,6 +45,7 @@ jobs:
     steps:
       - name: Build the Package
         run: |
+          ls
           dotnet pack Hackney.Shared.Activity -p:PackageVersion=$SEMVER --configuration Release
       # - name: Publish the Package
       #   run: |
