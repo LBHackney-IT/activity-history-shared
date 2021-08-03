@@ -28,18 +28,20 @@ jobs:
         uses: gittools/actions/gitversion/execute@v0.9.7
         with:
           useConfigFile: true
+  display-semver:
+    name: Display Semantic Version
+    runs-on: ubuntu-latest
+    needs: calculate-version
+    env:
+      SEMVER: ${{ needs.calculate-version.outputs.semVer }}
+    steps:
+      - name: Display version
+        run: |
+          echo SemVer: $SEMVER
   publish-package:
     name: Publish Package
     runs-on: ubuntu-latest
-    needs: calculate-version
-    steps:
-      - name: Display GitVersion outputs
-        run: |
-          echo "Major: ${{ steps.gitversion.outputs.major }}"
-          echo "Minor: ${{ steps.gitversion.outputs.minor }}"
-          echo "Patch: ${{ steps.gitversion.outputs.patch }}"
-          echo "PreReleaseTag: ${{ steps.gitversion.outputs.preReleaseTag }}"
-          echo "PreReleaseTagWithDash: ${{ steps.gitversion.outputs.preReleaseTagWithDash }}"
+    needs: display-semver
       # - name: Build the Package
       #   run: |
       #     cd ./Hackney.Shared.Activity

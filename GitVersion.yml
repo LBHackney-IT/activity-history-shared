@@ -4,7 +4,8 @@ next-version: 1.0.2
 branches:
   feature:
     tag: pre
-  pull-request: {}
+  pull-request:
+    tag: pre
   main:
     mode: ContinuousDeployment
   release:
