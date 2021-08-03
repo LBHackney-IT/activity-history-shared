@@ -1,5 +1,4 @@
 name: publish-nuget-package
-description: 'Publish a NuGet Package'
 on:
   create:
     branches: 
