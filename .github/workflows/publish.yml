@@ -6,16 +6,13 @@ on:
   push:
     branches:
     - main
-  pull_request:
-    branches:
-    - main
     
 jobs:
   calculate-version:
     name: Calculate Version
     runs-on: ubuntu-latest
     outputs:
-      semVer: ${{ steps.gitversion.outputs.semVer }}
+      version: ${{ steps.gitversion.outputs.nuGetVersionV2 }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -32,18 +29,18 @@ jobs:
           useConfigFile: true
       - name: Display package version
         run: |
-          echo "SemVer: $GITVERSION_SEMVER"
+          echo "Version: $GITVERSION_NUGETVERSIONV2"
   publish-package:
     name: Publish Package
     runs-on: ubuntu-latest
     needs: calculate-version
     env:
-      SEMVER: ${{ needs.calculate-version.outputs.semVer }}
+      VERSION: ${{ needs.calculate-version.outputs.version }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build the Package
-        run: dotnet pack Hackney.Shared.Activity -p:PackageVersion=$SEMVER --configuration Release
+        run: dotnet pack Hackney.Shared.Activity -p:PackageVersion=$VERSION --configuration Release
       - name: Publish the Package
         run: |
           cd Hackney.Shared.Activity/bin/Release
