@@ -13,7 +13,7 @@ branches:
   feature:
     tag: preview
     increment: Inherit
-    source-branches: ['master']
+    source-branches: ['main']
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
     tracks-release-branches: false
