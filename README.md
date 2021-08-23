@@ -3,11 +3,9 @@ At Hackney, we have created NuGet Packages to prevent the duplication of common 
 This NuGet package will store the shared code related to an activity that can then be used in the relevant projects. 
 
 #### GitHub Actions Pipeline - Versioning
-The pipeline does not automatically updates the package version number.
+The pipeline automatically updates the package version number.
 
-**This means that you no longer need to change the version number in the .csproj file**
-
-The new version number should use the following format:
+Version numbers use the following format:
 
 Any specific version number follows the form Major.Minor.Patch[-Suffix], where the components have the following meanings:
 

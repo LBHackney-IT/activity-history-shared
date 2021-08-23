@@ -1,11 +1,9 @@
 name: publish-nuget-package
 on:
-  create:
-    branches: 
-      - release/**
   push:
     branches:
     - main
+    - feature/**
     
 jobs:
   calculate-version:
