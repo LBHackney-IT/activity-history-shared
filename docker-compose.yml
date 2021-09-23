@@ -1,0 +1,10 @@
+version: "3.2"
+
+services:
+  hackney-shared-activity-test:
+    image: hackney-shared-activity-test
+    build:
+      context: .
+      dockerfile: Hackney.Shared.Activity.Tests/Dockerfile
+      args:
+        - LBHPACKAGESTOKEN=${LBHPACKAGESTOKEN}
