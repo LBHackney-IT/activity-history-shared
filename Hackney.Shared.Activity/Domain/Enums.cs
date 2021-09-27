@@ -5,7 +5,7 @@ namespace Hackney.Shared.Activity.Domain
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum TargetType
     {
-        Activity,
+        person,
         asset,
         tenure,
         contactDetails,
