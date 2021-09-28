@@ -1,4 +1,4 @@
-# Hackney.Shared.Activity
+# Hackney.Shared.ActivityHistory
 At Hackney, we have created NuGet Packages to prevent the duplication of common code when implementing our APIs.
 This NuGet package will store the shared code related to an activity that can then be used in the relevant projects. 
 
