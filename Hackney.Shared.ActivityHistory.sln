@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackney.Shared.Activity", "Hackney.Shared.Activity\Hackney.Shared.Activity.csproj", "{E622860E-7B2F-441A-ACEC-90DBDFA4AE2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackney.Shared.ActivityHistory", "Hackney.Shared.ActivityHistory\Hackney.Shared.ActivityHistory.csproj", "{E622860E-7B2F-441A-ACEC-90DBDFA4AE2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackney.Shared.Activity.Tests", "Hackney.Shared.Activity.Tests\Hackney.Shared.Activity.Tests.csproj", "{27445235-34F7-4798-83F5-5DD1D5917375}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackney.Shared.ActivityHistory.Tests", "Hackney.Shared.ActivityHistory.Tests\Hackney.Shared.ActivityHistory.Tests.csproj", "{27445235-34F7-4798-83F5-5DD1D5917375}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

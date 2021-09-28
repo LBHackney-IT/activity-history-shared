@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
  <PropertyGroup>
    <TargetFramework>netstandard2.1</TargetFramework>
-   <RepositoryUrl>https://github.com/LBHackney-IT/activity-shared</RepositoryUrl>
+   <RepositoryUrl>https://github.com/LBHackney-IT/activity-history-shared</RepositoryUrl>
    <Version>1.0.1</Version>
    <Authors>London Borough of Hackney</Authors>
    <Company>London Borough of Hackney</Company>
    <Copyright>2021</Copyright>
-   <Description>Shared Library for activity service</Description>
+   <Description>Shared Library for activity history service</Description>
    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
  </PropertyGroup>
 

@@ -1,10 +1,10 @@
-using Hackney.Shared.Activity.Domain;
+using Hackney.Shared.ActivityHistory.Domain;
 using Amazon.DynamoDBv2.DataModel;
 using Hackney.Core.DynamoDb.Converters;
 using System;
 using System.Collections.Generic;
 
-namespace Hackney.Shared.Activity.Infrastructure
+namespace Hackney.Shared.ActivityHistory.Infrastructure
 {
     [DynamoDBTable("ActivityHistory", LowerCamelCaseProperties = true)]
     public class ActivityHistoryDB

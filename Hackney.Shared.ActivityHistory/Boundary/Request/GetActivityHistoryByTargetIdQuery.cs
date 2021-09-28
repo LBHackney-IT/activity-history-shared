@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 
-namespace Hackney.Shared.Activity.Boundary.Request
+namespace Hackney.Shared.ActivityHistory.Boundary.Request
 {
     public class GetActivityHistoryByTargetIdQuery
     {

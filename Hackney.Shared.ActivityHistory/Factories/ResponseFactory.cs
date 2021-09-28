@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Hackney.Shared.Activity.Boundary.Response;
-using Hackney.Shared.Activity.Domain;
+using Hackney.Shared.ActivityHistory.Boundary.Response;
+using Hackney.Shared.ActivityHistory.Domain;
 
-namespace Hackney.Shared.Activity.Factories
+namespace Hackney.Shared.ActivityHistory.Factories
 {
     public static class ResponseFactory
     {

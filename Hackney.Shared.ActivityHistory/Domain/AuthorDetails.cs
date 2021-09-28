@@ -1,4 +1,4 @@
-namespace Hackney.Shared.Activity.Domain
+namespace Hackney.Shared.ActivityHistory.Domain
 {
     public class AuthorDetails
     {

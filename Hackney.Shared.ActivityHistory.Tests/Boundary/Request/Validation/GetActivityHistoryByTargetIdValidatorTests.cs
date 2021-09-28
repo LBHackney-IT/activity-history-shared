@@ -1,5 +1,5 @@
-using Hackney.Shared.Activity.Boundary.Request;
-using Hackney.Shared.Activity.Boundary.Request.Validation;
+using Hackney.Shared.ActivityHistory.Boundary.Request;
+using Hackney.Shared.ActivityHistory.Boundary.Request.Validation;
 using FluentValidation.TestHelper;
 using System;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace Hackney.Shared.Activity.Tests.Boundary.Request.Validation
+namespace Hackney.Shared.ActivityHistory.Tests.Boundary.Request.Validation
 {
     public class GetActivityHistoryByTargetIdValidatorTests
     {

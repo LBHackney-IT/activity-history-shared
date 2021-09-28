@@ -60,9 +60,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
-        run: docker-compose build hackney-shared-activity-test
+        run: docker-compose build hackney-shared-activity-history-test
       - name: Run tests
-        run: docker-compose run hackney-shared-activity-test
+        run: docker-compose run hackney-shared-activity-history-test
         
   publish-package:
     name: Publish Package
@@ -75,8 +75,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build the Package
-        run: dotnet pack Hackney.Shared.Activity -p:PackageVersion=$VERSION --configuration Release
+        run: dotnet pack Hackney.Shared.ActivityHistory -p:PackageVersion=$VERSION --configuration Release
       - name: Publish the Package
         run: |
-          cd Hackney.Shared.Activity/bin/Release
-          dotnet nuget push Hackney.Shared.Activity.*.nupkg -s https://nuget.pkg.github.com/LBHackney-IT/index.json --api-key ${{ secrets.NUGET_KEY }}
+          cd Hackney.Shared.ActivityHistory/bin/Release
+          dotnet nuget push Hackney.Shared.ActivityHistory.*.nupkg -s https://nuget.pkg.github.com/LBHackney-IT/index.json --api-key ${{ secrets.NUGET_KEY }}

@@ -1,7 +1,7 @@
 using FluentValidation;
 using System;
 
-namespace Hackney.Shared.Activity.Boundary.Request.Validation
+namespace Hackney.Shared.ActivityHistory.Boundary.Request.Validation
 {
     public class GetActivityHistoryByTargetIdValidator : AbstractValidator<GetActivityHistoryByTargetIdQuery>
     {

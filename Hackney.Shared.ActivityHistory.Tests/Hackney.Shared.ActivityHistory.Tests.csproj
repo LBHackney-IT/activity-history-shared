@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="../Hackney.Shared.Activity/Hackney.Shared.Activity.csproj" />
+    <ProjectReference Include="../Hackney.Shared.ActivityHistory/Hackney.Shared.ActivityHistory.csproj" />
   </ItemGroup>
 
 </Project>

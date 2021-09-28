@@ -1,9 +1,9 @@
-using Hackney.Shared.Activity.Domain;
-using Hackney.Shared.Activity.Factories;
+using Hackney.Shared.ActivityHistory.Domain;
+using Hackney.Shared.ActivityHistory.Factories;
 using FluentAssertions;
 using Xunit;
 
-namespace Hackney.Shared.Activity.Tests.Factories
+namespace Hackney.Shared.ActivityHistory.Tests.Factories
 {
     public class ResponseFactoryTest
     {

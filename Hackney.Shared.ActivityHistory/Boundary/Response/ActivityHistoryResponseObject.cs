@@ -1,8 +1,8 @@
-using Hackney.Shared.Activity.Domain;
+using Hackney.Shared.ActivityHistory.Domain;
 using System;
 using System.Collections.Generic;
 
-namespace Hackney.Shared.Activity.Boundary.Response
+namespace Hackney.Shared.ActivityHistory.Boundary.Response
 {
     public class ActivityHistoryResponseObject
     {

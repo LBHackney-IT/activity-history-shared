@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Hackney.Shared.Activity.Domain
+namespace Hackney.Shared.ActivityHistory.Domain
 {
     public class ActivityHistoryEntity
     {

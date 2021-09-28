@@ -1,12 +1,12 @@
 using AutoFixture;
-using Hackney.Shared.Activity.Domain;
-using Hackney.Shared.Activity.Factories;
-using Hackney.Shared.Activity.Infrastructure;
+using Hackney.Shared.ActivityHistory.Domain;
+using Hackney.Shared.ActivityHistory.Factories;
+using Hackney.Shared.ActivityHistory.Infrastructure;
 using FluentAssertions;
 using Xunit;
 using Bogus;
 
-namespace Hackney.Shared.Activity.Tests.Factories
+namespace Hackney.Shared.ActivityHistory.Tests.Factories
 {
     public class EntityFactoryTest
     {

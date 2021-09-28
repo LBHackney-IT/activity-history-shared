@@ -1,7 +1,7 @@
-using Hackney.Shared.Activity.Domain;
-using Hackney.Shared.Activity.Infrastructure;
+using Hackney.Shared.ActivityHistory.Domain;
+using Hackney.Shared.ActivityHistory.Infrastructure;
 
-namespace Hackney.Shared.Activity.Factories
+namespace Hackney.Shared.ActivityHistory.Factories
 {
     public static class EntityFactory
     {

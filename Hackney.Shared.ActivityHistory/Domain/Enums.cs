@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Hackney.Shared.Activity.Domain
+namespace Hackney.Shared.ActivityHistory.Domain
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum TargetType
