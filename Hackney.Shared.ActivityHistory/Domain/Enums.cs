@@ -10,7 +10,8 @@ namespace Hackney.Shared.ActivityHistory.Domain
         tenure,
         contactDetails,
         tenureActivity,
-        tenurePerson
+        tenurePerson,
+        personEqualityInformation
     }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
