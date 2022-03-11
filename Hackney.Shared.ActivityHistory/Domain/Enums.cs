@@ -13,6 +13,7 @@ namespace Hackney.Shared.ActivityHistory.Domain
         tenurePerson,
         personEqualityInformation,
         housingApplication,
+        process
     }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
