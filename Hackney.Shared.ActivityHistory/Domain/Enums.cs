@@ -24,6 +24,7 @@ namespace Hackney.Shared.ActivityHistory.Domain
         create,
         update,
         delete,
-        migrate
+        migrate,
+        end
     }
 }
