@@ -15,7 +15,8 @@ namespace Hackney.Shared.ActivityHistory.Domain
         housingApplication,
         process,
         contract,
-        cautionaryAlert
+        cautionaryAlert,
+        patchesAndAreas
     }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]
