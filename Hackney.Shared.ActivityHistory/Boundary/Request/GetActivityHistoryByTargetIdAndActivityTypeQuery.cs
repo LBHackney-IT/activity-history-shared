@@ -1,0 +1,19 @@
+using Microsoft.AspNetCore.Mvc;
+using System;
+
+namespace Hackney.Shared.ActivityHistory.Boundary.Request
+{
+    public class GetActivityHistoryByTargetIdAndActivityTypeQuery
+    {
+        [FromQuery]
+        public Guid TargetId { get; set; }
+        [FromQuery]
+        public string ActivityType { get; set; }
+
+        [FromQuery]
+        public string PaginationToken { get; set; }
+
+        [FromQuery]
+        public int? PageSize { get; set; }
+    }
+}
